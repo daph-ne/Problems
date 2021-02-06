@@ -1,7 +1,6 @@
-#Problems
+# PROBLEMS
 ---
-##Index of Problems with solutions
----
-###Problem link and number is added
+## Index of Problems with solutions
+Problem link and number is added
 ---
 
