@@ -33,13 +33,16 @@
 
 class RichestCustomerWealth {
     public int maximumWealth(int[][] accounts) {
+        //Create new array
         int[] wealth = new int[accounts.length];
         int richest = 0;
+        //Run through the array and find sum f each sub-array
         for(int i = 0; i < accounts.length; ++i) {
             for(int j = 0; j < accounts[i].length; ++j) {
                wealth[i] += accounts[i][j];
             }
         }
+        //Find richest
         for(int i = 0; i < wealth.length; ++i) {
             if(wealth[i] > richest) {
                 richest = wealth[i];
