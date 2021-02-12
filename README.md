@@ -7,3 +7,4 @@
 |11|[Container With Most Water](./ContainerWithMostWater.java)|Medium|Measure water between initial to final value, Max value is area of container|
 |1|[Two Sum](./TwoSum.java)|Easy|Create new array with size 2 since only one valid answer exists, Loop through the array, Check if sum is target and return the indeces|
 |34|[Find First and Last Position of Element in Sorted Array](./FindFirstAndLastPositionOfElementInSortedArray.java)|Medium|Preset output values to -1, -1, Use binary search, Replace output with index if target is found| 
+|42|[Trapping Rain Water](./TrappingRainWater.java)|Hard|Initialize rainWater as 0, Compare the max on each side of the value, Take the minimum of the maximums and minus the height|
