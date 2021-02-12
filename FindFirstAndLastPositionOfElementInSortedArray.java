@@ -31,12 +31,30 @@ class FindFirstAndLastPositionOfElementInSortedArray {
         output[0] = -1;
         output[1] = -1;
         final int length = nums.length;
-        
+        //If it is an empty array
         if(length == 0) {
             output[0] = -1;
             output[1] = -1;
         }
-        //Using binary search
+        //If it has only one value
+        if(length == 1 && nums[0] == target) {
+            output[0] = 0;
+            output[1] = 0;
+        }
+        //If it has two values
+        if(length == 2){
+            if(nums[0] == target && nums[1] == target) {
+                output[0] = 0;
+                output[1] = 1;
+            } else if(nums[0] == target && nums[1] != target) {
+                output[0] = 0;
+                output[1] = 0;
+            } else if(nums[0] != target && nums[1] == target) {
+                output[0] = 1;
+                output[1] = 1;
+            }
+        }
+        //Using binary search when length is > 2
         final int mid = length/2;
         int left = mid;
         int right = mid + 1;
@@ -58,6 +76,27 @@ class FindFirstAndLastPositionOfElementInSortedArray {
             right++;
         }
             
+        return output;
+    }
+}
+
+
+class FindFirstAndLastPositionOfElementInSortedArray {
+    public int[] searchRange(int[] nums, int target) {
+        //Preset valuews of output to -1, -1
+        int[] output = {-1,-1};
+        final int length = nums.length;
+        //Replace output with index if target is found
+        for(int i = 0; i < length; i++) {
+            if(nums[i] == target) {
+                if(output[0] == -1) {
+                    output[0] = i;
+                }
+                if(nums[i] == target) {
+                    output[1] = i;
+                }
+            }
+        }
         return output;
     }
 }
