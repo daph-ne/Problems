@@ -14,3 +14,4 @@
 ## Others
 | Problem number | Problem | Remarks | 
 |:-----:|:-----:|:-----:|
+|1| [Print the word with odd letters as X](./WorddWithOddLetters.java)|Loop from beginning and the end; Set value in required index; Fill the other indeces with spaces; Print new line|  
