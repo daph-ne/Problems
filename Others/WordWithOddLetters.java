@@ -21,9 +21,9 @@ public class WordWithOddLetters {
                     System.out.print(word.charAt(k));
                 } else {
                     System.out.print(" ");
-                }
-            System.out.print("");
+		}
             }
+	System.out.println("");
         }
     }
 }
