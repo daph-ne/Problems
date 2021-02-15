@@ -10,6 +10,7 @@
 |34|[Find First and Last Position of Element in Sorted Array](./Leetcode/FindFirstAndLastPositionOfElementInSortedArray.java)|Medium|Preset output values to -1, -1; Use binary search; Replace output with index if target is found| 
 |42|[Trapping Rain Water](./Leetcode/TrappingRainWater.java)|Hard|Initialize rainWater as 0; Compare the max on each side of the value; Take the minimum of the maximums and minus the height|
 |4|[Median of Two Sorted Arrays](./Leetcode/MedianOfTwoSortedArrays.java)|Hard|merge the two arrays; check to see what elements are leftover; if the length is even, take the two middle elements and divide by 2|
+|74|[Search a 2D Matrix](./SearchA2DMatrix.java)|Medium|Loop nested for loops; Return true if target is found; Otherwise return false|
 
 ## Others
 | Problem number | Problem | Remarks | 
