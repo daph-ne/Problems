@@ -18,3 +18,4 @@
 |1| [Print the word with odd letters as X](./Others/WordWithOddLetters.java)|Loop from beginning and the end; Set value in required index; Fill the other indeces with spaces; Print new line| 
 |2| [Save the string in a two dimensional array and search for substring](./Others/StringToTwoDimensional.java)|Save the string as a grid; Look for target string horizontally and vertically; If present, print the start and end index|
 |3| [Print rupee in different currencies](./Others/DifferentCurrencies.java)|Create separate methods for calculating and printing each currency|
+|4| [Find sum of weights based on the following conditions](./Others/SumOfWeights.java)|Create new array and insert total weight of each number(same index); Sort weights array and reposition values in input array accordingly; Print as required|
