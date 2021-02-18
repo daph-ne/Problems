@@ -33,8 +33,7 @@
 *    1 <= m + n <= 2000
 *    -106 <= nums1[i], nums2[i] <= 106
 */
-
-class MedianOfTheTwoSortedArrays {
+class MedianOfTwoSortedArrays {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int mergedArr[] = new int[nums1.length + nums2.length];
         int i = 0, j = 0, k = 0; // pointers
