@@ -38,7 +38,7 @@ class MedianOfTwoSortedArrays {
         int mergedArr[] = new int[nums1.length + nums2.length];
         int i = 0, j = 0, k = 0; // pointers
         // merge the two arrays
-        while(i < nums1.length & j < nums2.length) {
+        while(i < nums1.length && j < nums2.length) {
             if(nums1[i] < nums2[j]) {
                 mergedArr[k] = nums1[i];
                 i++;
