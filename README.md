@@ -20,3 +20,4 @@
 |3| [Print rupee in different currencies](./Others/DifferentCurrencies.java)|Create separate methods for calculating and printing each currency|
 |4| [Find sum of weights based on the following conditions](./Others/SumOfWeights.java)|Create new array and insert total weight of each number(same index); Sort weights array and reposition values in input array accordingly; Print as required|
 |5| [Find number of grandchildren](./Others/Grandchildren.java)|Split 2d array into child and father arrays; Find child and replace father with that child; Increment the value of grandchildren for the number of time the father is present;|
+|6| [Alternate sorting](./Others/AlternateMaxMin.java)|Create new array; Insert last element and first element of input array into the new array alternatively.| 
