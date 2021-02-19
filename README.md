@@ -19,3 +19,4 @@
 |2| [Save the string in a two dimensional array and search for substring](./Others/StringToTwoDimensional.java)|Save the string as a grid; Look for target string horizontally and vertically; If present, print the start and end index|
 |3| [Print rupee in different currencies](./Others/DifferentCurrencies.java)|Create separate methods for calculating and printing each currency|
 |4| [Find sum of weights based on the following conditions](./Others/SumOfWeights.java)|Create new array and insert total weight of each number(same index); Sort weights array and reposition values in input array accordingly; Print as required|
+|5| [Find number of grandchildren](./Others/Grandchildren.java)|Split 2d array into child and father arrays; Find child and replace father with that child; Increment the value of grandchildren for the number of time the father is present;|
