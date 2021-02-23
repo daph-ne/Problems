@@ -24,4 +24,4 @@
 |7| [Sort the elements in odd positions in descending order and elements in ascending order](./Others/SortOddEvenPositions.java)|Sort odd positions of input separately; Sort even positions of input separately; Print the sorted input|
 |8| [Remove unbalanced parentheses in a given expression](./Others/UnbalancedParentheses.java)| Change the given string to array; Count number of open and closed brackets; Find number of extra brackets; Remove the extra brackets by copying the remaining to a new string.|
 |9| [Repeating alphabet given number of times](./Others/NumbersAndFrequency.java)| |
-|10| [Merge arrays wothput repeating the elements](./Others/MergeSortedArrays.java) | |
+|10| [Merge arrays without repeating the elements](./Others/MergeSortedArrays.java) | |
