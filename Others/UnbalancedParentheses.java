@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  * Link - https://www.geeksforgeeks.org/zoho-interview-set-2-campus/
  * Remove unbalanced parentheses in a given expression.
