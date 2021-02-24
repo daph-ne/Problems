@@ -4,13 +4,13 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 
 public class Unreserved implements Coach {
-    static int totalSeats;
+    int totalSeats;
 
-    static int totalLower;
-    static int totalUpper;
+    int totalLower;
+    int totalUpper;
 
-    static int availLower;
-    static int availUpper;
+    int availLower;
+    int availUpper;
 
     public Unreserved() {
         DayOfWeek dayOfWeek = LocalDate.now().getDayOfWeek();
