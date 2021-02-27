@@ -70,6 +70,37 @@ public class StarPrinting {
             System.out.println();
         }
     }
+    /** Output:
+          *
+          * *
+          * * *
+          * * * *
+          * * *
+          * *
+          *
+     */
+
+    private static void parallelogram(int input) {
+        int row = input;
+        for(int i = 0; i < row; i++) {
+            for(int j = 2 * (row - i) - 2; j >= 0; j--) {
+                System.out.print(" ");
+            }
+            for(int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(int i = row - 2; i >= 0; i--) {
+            for(int j = 0; j <= 0; j++) {
+                System.out.print(" ");
+            }
+            for(int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String[] args) {
         int input = 4;
@@ -77,5 +108,7 @@ public class StarPrinting {
         rightStarPattern(input);
         pyramidStarPattern(input);
         leftHalfDiamond(input);
+        //rightHalfDiamond(input);
+        parallelogram(input);
     }
 }
