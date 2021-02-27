@@ -55,10 +55,27 @@ public class StarPrinting {
          * * * *
      */
 
+    private static void leftHalfDiamond(int input) {
+        int row = input;
+        for(int i = 0; i < row; i++) {
+            for(int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(int i = row - 2; i >= 0; i--) {
+            for(int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         int input = 4;
         leftStarPattern(input);
         rightStarPattern(input);
         pyramidStarPattern(input);
+        leftHalfDiamond(input);
     }
 }
