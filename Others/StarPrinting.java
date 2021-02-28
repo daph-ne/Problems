@@ -80,6 +80,51 @@ public class StarPrinting {
           *
      */
 
+    private static void rightHalfDiamond(int input) {
+        int row = input;
+        for(int i = 0; i < row; i++) {
+            for(int j = 2 * (row - i) - 2; j >= 0; j--) {
+                System.out.print(" ");
+            }
+            for(int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(int i = 0; i <= row - 1; i++) {
+            for(int j = 1; j <= row - i; j++) {
+                System.out.print(" ");
+            }
+            for(int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    private static void diamond(int input) {
+        int row = input;
+
+        for(int i = row - 2; i >= 0; i--) {
+            for(int j = 0; j <= i; j++) {
+                System.out.print(" ");
+            }
+            for(int j = i; j <= row - 1; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(int i = row - 2; i >= 0; i--) {
+            for(int j = 0; j <= row - i; j++) {
+                System.out.print(" ");
+            }
+            for(int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
     private static void parallelogram(int input) {
         int row = input;
         for(int i = 0; i < row; i++) {
@@ -108,7 +153,8 @@ public class StarPrinting {
         rightStarPattern(input);
         pyramidStarPattern(input);
         leftHalfDiamond(input);
-        //rightHalfDiamond(input);
+        rightHalfDiamond(input);
+        diamond(input);
         parallelogram(input);
     }
 }
