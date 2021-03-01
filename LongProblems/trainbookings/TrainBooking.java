@@ -66,6 +66,7 @@ public class TrainBooking {
     }
 
     public static void main (String[]args){
+        TrainBooking tr = new TrainBooking();
         while (true) {
             System.out.println("Choose one : ");
             System.out.println("    1. List of Coaches");
@@ -75,16 +76,13 @@ public class TrainBooking {
             Scanner train = new Scanner(System.in);
             int choice = train.nextInt();
             if (choice == Constants.LIST_OF_COACHES) {
-                TrainBooking tr = new TrainBooking();
                 tr.list();
                 train.nextLine();
 
             } else if (choice == Constants.BOOK_TICKETS) {
-                TrainBooking tr = new TrainBooking();
                 tr.bookTickets();
 
             } else if (choice == Constants.CANCEL_TICKETS) {
-                TrainBooking tr = new TrainBooking();
                 tr.cancelTickets();
             } else if (choice == Constants.EXIT) {
                 System.out.println("THANK YOU..!!");
