@@ -12,8 +12,7 @@ public class AirConditioned implements Coach {
     int availLower;
     int availUpper;
 
-    @Override
-    public void getAvailableSeats() {
+    public AirConditioned() {
         DayOfWeek dayOfWeek = LocalDate.now().getDayOfWeek();
         if(dayOfWeek.equals("Saturday") || dayOfWeek.equals("Sunday")){
             totalSeats = 20;
@@ -28,12 +27,17 @@ public class AirConditioned implements Coach {
             availLower = 5;
             availUpper = 5;
         }
-        System.out.println("    1. Air-Conditioned (AC) - " + availLower + "L and " + availUpper  + "U seats out of " + totalSeats + " seats are available.");
+    }
+
+    @Override
+    public void getAvailableSeats() {
+        System.out.println("    3. Air-Conditioned (AC) - " + availLower + "L and " + availUpper  + "U seats out of " + totalSeats + " seats are available.");
     }
 
     @Override
     public void book(String berth, int numberOfSeats) {
         if (berth.equals(Constants.LOWER_BERTH)) {
+
             if (numberOfSeats > availLower) {
                 System.out.println("Sorry, only " + availLower + " seats are left in Lower berth.");
                 if (availUpper > 0 && availUpper <= totalUpper) {
@@ -60,22 +64,23 @@ public class AirConditioned implements Coach {
         }
     }
 
+
     @Override
     public void cancel(String berth, int numberOfSeats) {
         if (berth.equals(Constants.LOWER_BERTH)) {
-            this.availLower = availLower + numberOfSeats;
+            availLower = availLower + numberOfSeats;
             if (availLower <= totalLower && availLower > 0) {
                 System.out.println(numberOfSeats + " seat(s) have been cancelled in Lower berth.");
             } else if (availLower > totalLower) {
                 System.out.println("Please check and confirm the number of seats.");
-                this.availLower = availLower - numberOfSeats;
+                availLower = availLower - numberOfSeats;
             } else {
                 System.out.println("Please cancel valid number of seats");
                 availLower = availLower - numberOfSeats;
             }
         } else if (berth.equals(Constants.UPPER_BERTH)) {
-            this.availUpper = availUpper + numberOfSeats;
-            if (this.availUpper <= totalUpper && availUpper > 0) {
+            availUpper = availUpper + numberOfSeats;
+            if (availUpper <= totalUpper && availUpper > 0) {
                 System.out.println(numberOfSeats + " seat(s) have been cancelled in Lower berth.");
             } else if (availUpper > totalUpper) {
                 System.out.println("Please check and confirm the number of seats.");
