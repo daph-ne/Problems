@@ -27,7 +27,7 @@
 |10| [Merge arrays without repeating the elements](./Others/MergeSortedArrays.java) | |
 |11| [Star Printing](./Others/StarPrinting.java) | Count spaces and stars and program accordingly|
 |12| [Find the extra element and its index](./Others/FindingExtraElement.java) | Sort both arrays; Compare index of both arrays; If different it is extra.|
-
+|13| [Pattern Printing (Pyramid numbers)](./Others/PatternPrinting.java)| 3 for loops: <br> 1. for Spaces <br> 2. for Numbers in ascending order <br> 3. for Numbers in descending order | 
 
 
 
