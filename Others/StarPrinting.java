@@ -91,22 +91,33 @@ public class StarPrinting {
             }
             System.out.println();
         }
-        for(int i = 0; i <= row - 1; i++) {
-            for(int j = 1; j <= row - i; j++) {
+        int extraSpace = 0;
+        for(int i = row - 2; i >= 0; i--) {
+            for(int j = 0; j <= row - i + extraSpace; j++) {
                 System.out.print(" ");
             }
             for(int j = 0; j <= i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
+            extraSpace++;
         }
     }
+    /** Output:
+                *
+              * *
+            * * *
+          * * * *
+            * * *
+              * *
+                *
+     */
 
     private static void diamond(int input) {
         int row = input;
 
-        for(int i = row - 2; i >= 0; i--) {
-            for(int j = 0; j <= i; j++) {
+        for(int i = row; i >= 0; i--) {
+            for(int j = 0; j < i; j++) {
                 System.out.print(" ");
             }
             for(int j = i; j <= row - 1; j++) {
@@ -115,7 +126,7 @@ public class StarPrinting {
             System.out.println();
         }
         for(int i = row - 2; i >= 0; i--) {
-            for(int j = 0; j <= row - i; j++) {
+            for(int j = 0; j <= row - i - 2; j++) {
                 System.out.print(" ");
             }
             for(int j = 0; j <= i; j++) {
@@ -124,6 +135,15 @@ public class StarPrinting {
             System.out.println();
         }
     }
+    /** Output:
+            *
+           * *
+          * * *
+         * * * *
+          * * *
+           * *
+            *
+     */
 
     private static void parallelogram(int input) {
         int row = input;
