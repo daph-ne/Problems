@@ -167,6 +167,16 @@ public class StarPrinting {
         }
     }
 
+    /** Output:
+                *
+              * *
+            * * *
+          * * * *
+          * * *
+          * *
+          *
+     */
+
     public static void main(String[] args) {
         int input = 4;
         leftStarPattern(input);
