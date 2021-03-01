@@ -14,27 +14,56 @@
 public class FindingExtraElement {
 
     private void extraElement(int[] input1, int[] input2) {
-        int extra;
-        int repeated = 0;
-        String array = "1";
-        if(input2.length > input1.length) {
-            int[] temp = input2;
-            input2 = input1;
-            input1 = temp;
-            array = "2";
-        }
+        int extra = 0;
+        int[] array1 = input1;
+        int[] array2 = input2;
+        //Sorting both the arrays
         for(int i = 0; i < input1.length; i++) {
-            for(int j = 0; j <input2.length; j++) {
-                if(input1[i] == input2[j]) {
-                    repeated++;
+            for(int j = i + 1; j < input1.length; j++) {
+                if(input1[i] > input1[j]) {
+                    int temp = input1[i];
+                    input1[i] = input1[j];
+                    input1[j] = temp;
                 }
             }
-            if(repeated == 0) {
-                extra = input1[i];
-                i = i+1;
-                System.out.println(extra + " is the extra element in array " + array + " at index " + i + ".");
+        }
+        for(int i = 0; i < input2.length; i++) {
+            for(int j = i + 1; j < input2.length; j++) {
+                if(input2[i] > input2[j]) {
+                    int temp = input2[i];
+                    input2[i] = input2[j];
+                    input2[j] = temp;
+                }
             }
-            repeated = 0;
+        }
+        //Comparing index of both the arrays
+        //Using this method to reduce the time complexity
+        if(input2.length > input1.length) {
+            for(int i = 0; i < input2.length; i++) {
+                if(input2[i] != input1[i]) {
+                    extra = input2[i];
+                    break;
+                }
+            }
+            for(int i = 0; i < array2.length; i++) {
+                if(array2[i] == extra) {
+                    i = i + 1;
+                    System.out.println(extra + " is the extra element in array 2 at index " + i + ".");
+                }
+            }
+        } else {
+            for(int i = 0; i < input1.length; i++) {
+                if(input1[i] != input2[i]) {
+                    extra = input1[i];
+                    break;
+                }
+            }
+        }
+        for(int i = 0; i < array1.length; i++) {
+            if(array1[i] == extra) {
+                i = i + 1;
+                System.out.println(extra + " is the extra element in array 1 at index " + i + ".");
+            }
         }
     }
 
