@@ -78,7 +78,6 @@ public class TrainBooking {
             if (choice == Constants.LIST_OF_COACHES) {
                 tr.list();
                 train.nextLine();
-
             } else if (choice == Constants.BOOK_TICKETS) {
                 tr.bookTickets();
 
