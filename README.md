@@ -29,6 +29,7 @@
 |12| [Find the extra element and its index](./Others/FindingExtraElement.java) | Sort both arrays; Compare index of both arrays; If different it is extra.|
 |13| [Pattern Printing (Pyramid numbers)](./Others/PatternPrinting.java)| 3 for loops: <br> 1. for Spaces <br> 2. for Numbers in ascending order <br> 3. for Numbers in descending order | 
 |14| [Number to be added to get the total](./Others/NumToBeAdded.java)| Use scanner to get input of 1 value and total; total - given value to get the required value. |
+|15| [Find the least prime number that can be added with first array element that makes them divisible by second array](./Others/AddPrimeNumber.java)| Find remainder when divided; Find what should be added to the reminder | 
 
 
 
