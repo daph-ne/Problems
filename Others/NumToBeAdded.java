@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-import static java.lang.Integer.MAX_VALUE;
-import static java.lang.Integer.MIN_VALUE;
-
 public class NumToBeAdded {
     private void addNumToValue(int value1, int total) {
         int value2;
