@@ -17,11 +17,10 @@ public class NumbersAndFrequency {
         int[] pair = new int[2];
 
         for(int i = 0; i < input.length(); i++) {
-            boolean check = Character.isDigit(input.charAt(k));
-            if(check) {
+            if(input.charAt(k) >= 0 && input.charAt(k) < 9) {
                 pair[1] = input.charAt(k);
                 k++;
-                if(Character.isDigit(input.charAt(k))) {
+                if(input.charAt(k) >= 0 && input.charAt(k) < 9) {
                     pair[1] += input.charAt(k);
                     k++;
                 }
@@ -29,8 +28,12 @@ public class NumbersAndFrequency {
                 pair[0] = input.charAt(k);
                 k++;
             }
-            int j = 1;
-            while(j < pair[1]) {
+            System.out.println(pair[0]);
+            System.out.println(pair[1]);
+            int times = pair[1];
+            System.out.println(times);
+            int j = 0;
+            while(j < times) {
                 output += pair[0];
                 j++;
             }
