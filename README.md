@@ -31,7 +31,7 @@
 |14| [Number to be added to get the total](./Others/NumToBeAdded.java)| Use scanner to get input of 1 value and total; total - given value to get the required value. |
 |15| [Find the least prime number that can be added with first array element that makes them divisible by second array](./Others/AddPrimeNumber.java)| Find remainder when divided; Find what should be added to the reminder |
 |16| [Sort the array elements in descending order according to their frequency of occurrence](./Others/SortByFrequency.java) | Sort the given input; Count different numbers; Create 2 new arrays for numbers and its frequency; Sort frequency array in descending order and numbers array accordingly; Sort in ascending when frequency is same; Print each number frequency number of times.|
-
+|17| [Print true if second string is a substring of first string, else print false](./Others/SubString.java) | re-running the same function until there are no remaining characters in substring. If it becomes 0, true, else false. |
 
 
 
