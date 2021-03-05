@@ -12,11 +12,11 @@
 public class SubString {
 
     private boolean extraStar(String substring, String word, int i, int j) {
-        if((substring.charAt(i - 1) == '*' && substring.charAt(i - 2) == word.charAt((i - 1))) ||
+        if((substring.charAt(i - 1) == '*' && substring.charAt(i - 2) == word.charAt(i)) ||
         (substring.charAt(0) == '*' && substring.charAt(1) == word.charAt((0)))){
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 
     private boolean subString(String substring, String word, int i, int j) {
@@ -39,16 +39,16 @@ public class SubString {
         int i = substring.length();
         int j = word.length();
         SubString ss = new SubString();
-        boolean extraStar =  ss.subString(substring, word, i ,j);
-        if(extraStar) {
+        boolean checkStar =  ss.extraStar(substring, word, i ,j);
+        if(checkStar) {
+            System.out.print("FALSE");
+        } else {
             boolean output = ss.subString(substring, word, i ,j);
             if(output) {
                 System.out.print("TRUE");
             } else {
                 System.out.print("FALSE");
             }
-        } else {
-            System.out.print("FALSE");
         }
     }
 }
