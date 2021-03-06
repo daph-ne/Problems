@@ -1,5 +1,6 @@
 package trainbookings;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class TrainBooking {
@@ -31,7 +32,8 @@ public class TrainBooking {
         Scanner book = new Scanner(System.in);
         int option = book.nextInt();
         System.out.println("Enter number of seats : ");
-        int numberOfSeats = book.nextInt();
+        int numberOfSeats = 0;
+        numberOfSeats = book.nextInt();
         book.nextLine();
         System.out.println("Enter berth - Lower(L) or Upper(U)");
         String berth = book.nextLine();
@@ -65,31 +67,41 @@ public class TrainBooking {
         }
     }
 
-    public static void main (String[]args){
-        TrainBooking tr = new TrainBooking();
-        while (true) {
-            System.out.println("Choose one : ");
-            System.out.println("    1. List of Coaches");
-            System.out.println("    2. Book Tickets");
-            System.out.println("    3. Cancel Tickets");
-            System.out.println("    4. Exit");
-            Scanner train = new Scanner(System.in);
-            int choice = train.nextInt();
-            if (choice == Constants.LIST_OF_COACHES) {
-                tr.list();
-                train.nextLine();
-            } else if (choice == Constants.BOOK_TICKETS) {
-                tr.bookTickets();
+    public static void main(String[] args) {
+        try {
+            TrainBooking tr = new TrainBooking();
+            while (true) {
+                System.out.println("Choose one : ");
+                System.out.println("    1. List of Coaches");
+                System.out.println("    2. Book Tickets");
+                System.out.println("    3. Cancel Tickets");
+                System.out.println("    4. Exit");
+                Scanner train = new Scanner(System.in);
+                int choice = train.nextInt();
+                if (choice < 1 || choice > 4) {
+                    throw new InputMismatchException("Expected 1 to 4, got something else");
+                }
+                if (choice == Constants.LIST_OF_COACHES) {
+                    tr.list();
+                    train.nextLine();
+                } else if (choice == Constants.BOOK_TICKETS) {
+                    tr.bookTickets();
 
-            } else if (choice == Constants.CANCEL_TICKETS) {
-                tr.cancelTickets();
-            } else if (choice == Constants.EXIT) {
-                System.out.println("THANK YOU..!!");
-                break;
+                } else if (choice == Constants.CANCEL_TICKETS) {
+                    tr.cancelTickets();
+                } else if (choice == Constants.EXIT) {
+                    System.out.println("THANK YOU..!!");
+                    break;
 
-            } else {
-                System.out.println("Invalid Choice..!!!");
+                } else {
+                    System.out.println("Invalid Choice..!!!");
+                }
             }
+        } catch (InputMismatchException ime) {
+            System.out.println("Sorry, please try later - your inputs were wrong");
+        } catch (Exception e) {
+            System.out.println("Sorry, please try later - unknown error");
+            e.printStackTrace();
         }
     }
 }
