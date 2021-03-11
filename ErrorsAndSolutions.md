@@ -8,7 +8,7 @@
 |5| public static void main (String[]args){ <br> illegal start of expression <br>  ‘;’ expected |  The seven errors are simply Java complaining about not being able to read the file. | You need to close the method modulo with a brace: }.|
 |6| if (berth == "L") { | When comparing String you use .equals() or .equalsIgnoreCase().| if (berth.equals("L")) { |
 |7| interface Coach { <br> book(); <br> } | return type required | interface Coach { <br> void book(); <br> } |
-
+|8| Printing random letters and number with @  | It is trying to print an object directly. | |
 
 
 
