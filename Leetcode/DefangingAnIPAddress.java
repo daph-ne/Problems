@@ -16,29 +16,9 @@
  */
 
 public class DefangingAnIPAddress {
-
-    //convert it into an array
-    private char[] convertToArray(String address) {
-        char[] addressArr = address.toCharArray();
-        for (int i = 0; i < addressArr.length; i++) {
-            if (addressArr[i] == '.') {
-                addressArr[i] = "[.]";
-            }
-        }
-        return addressArr;
-    }
-    //to return as a string
-    private void defangedAddress(char[] arrayOfAddress) {
-        String ipAddress = "";
-        for(int i = 0; i < arrayOfAddress.length; i++) {
-            ipAddress += arrayOfAddress[i];
-        }
-        System.out.println(ipAddress);
-    }
     public static void main(String[] args) {
         String address = "1.1.1.1";
-        DefangingAnIPAddress ip = new DefangingAnIPAddress();
-        char[] arrayOfAddress = ip.convertToArray(address);
-        ip.defangedAddress(arrayOfAddress);
+        address = address.replace(".", "[.]");
+        System.out.println(address);
     }
 }
