@@ -13,7 +13,7 @@
 |74|[Search a 2D Matrix](./Leetcode/SearchA2DMatrix.java )|Medium|Loop nested for loops; Return true if target is found; Otherwise return false|
 |21|[Merge Two Sorted Lists](./Leetcode/ListNode.java)| Easy | Choose smaller value; Append to list; Move pointer forward; Append the remaining when one list is empty.|
 |771|[Jewels and Stones](./Leetcode/JewelsAndStones.java)|Easy| Iterate using inner for loop; add count when same element is found. |
-|1108|[Defanging an IP Address](./Leetcode/DefangingAnIPAddress.java) | Easy | Using replace keyword|
+|1108|[Defanging an IP Address](./Leetcode/DefangingAnIPAddress.java) | Easy | Method 1 <br> Using replace keyword <br> <br> Method 2 <br> Create new string; replace the required characters|
 
 
 
