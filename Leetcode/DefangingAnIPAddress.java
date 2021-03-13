@@ -18,7 +18,16 @@
 public class DefangingAnIPAddress {
     public static void main(String[] args) {
         String address = "1.1.1.1";
-        address = address.replace(".", "[.]");
-        System.out.println(address);
+        String str = "";
+        for(int i = 0; i < address.length(); i++){
+            if(address.charAt(i) == '.') {
+                str += "[.]";
+            }
+            else {
+                str += address.charAt(i);
+            }
+        }
+        System.out.println(str);
     }
 }
+
