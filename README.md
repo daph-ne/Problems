@@ -16,6 +16,8 @@
 |1108|[Defanging an IP Address](./Leetcode/DefangingAnIPAddress.java) | Easy | Method 1 <br> Using replace keyword <br> <br> Method 2 <br> Create new string; replace the required characters|
 |31| [Next Permutation](./Leetcode/NextPermutation.java)| Medium | Solved from the last index <br> 'i' is the first small number after a large number. <br> 'j' is the first number larger than 'i'. <br> Swap i and j. <br> Reverse the remaining indexes after i. |
 |1773| [Count Items Matching a Rule](./Leetcode/CountItemsMatchingARule.java) | Easy | Iterate through the list; <br> Find matching using switch case|
+|1528| [Shuffle String](./Leetcode/ShuffleString.java) | Easy | Create new char array; <br> Loop; <br> Place each character in the given index of new array.|
+|1678| [Goal Parser Interpretation](./Leetcode/GoalParserInterpretation.java) | Easy | Replace each character with given and move the index accordingly. |
 
 
 ## Others
