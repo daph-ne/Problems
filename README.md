@@ -18,6 +18,7 @@
 |1773| [Count Items Matching a Rule](./Leetcode/CountItemsMatchingARule.java) | Easy | Iterate through the list; <br> Find matching using switch case|
 |1528| [Shuffle String](./Leetcode/ShuffleString.java) | Easy | Create new char array; <br> Loop; <br> Place each character in the given index of new array.|
 |1678| [Goal Parser Interpretation](./Leetcode/GoalParserInterpretation.java) | Easy | Replace each character with given and move the index accordingly. |
+|1281| [Subtract the Product and Sum of Digits of an Integer](./Leetcode/SubtractProductSum.java) | Easy | Use modulus and remove last digit after each calculation |
 
 
 ## Others
