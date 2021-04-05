@@ -19,8 +19,8 @@
 |1528| [Shuffle String](./Leetcode/ShuffleString.java) | Easy | Create new char array; <br> Loop; <br> Place each character in the given index of new array.|
 |1678| [Goal Parser Interpretation](./Leetcode/GoalParserInterpretation.java) | Easy | Replace each character with given and move the index accordingly. |
 |1281| [Subtract the Product and Sum of Digits of an Integer](./Leetcode/SubtractProductSum.java) | Easy | Use modulus and remove last digit after each calculation |
-|650| [2 Keys Keyboard](./Leetcode/TwoKeysKeyboard) |Medium |  loop until it becomes 1; make it even if odd and divide by 2 |
-|71| [Simplify Path](./Leetcode/SimplifyPath) |Medium| Create new stack <br> Split the path <br> Push each level and pop when .. is present|
+|650| [2 Keys Keyboard](./Leetcode/TwoKeysKeyboard.java) |Medium |  loop until it becomes 1; make it even if odd and divide by 2 |
+|71| [Simplify Path](./Leetcode/SimplifyPath.java) |Medium| Create new stack <br> Split the path <br> Push each level and pop when .. is present|
 
 
 ## Others
