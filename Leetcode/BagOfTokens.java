@@ -46,19 +46,30 @@
  */
 public class BagOfTokens {
     public int bagOfTokensScore(int[] tokens, int P) {
-        int output = 0;
-        if (tokens.length == 0 && P < tokens[0]) {
+        public int bagOfTokensScore(int[] tokens, int P) {
+            int output = 0;
+            int n = tokens.length;
+            if (tokens.length == 1 && P < tokens[0]) {
+                return output;
+            }
+            int last = tokens.length - 1;
+            Arrays.sort(tokens);
+            System.out.print(Arrays.toString(tokens));
+            for (int i = 0; i < n; i++) {
+                if (P >= tokens[i]) {
+                    P = P - tokens[i];
+                    output++;
+                } else if (i != last && output > 0 && P < tokens[last]) {
+                    P = P + tokens[last];
+                    output--;
+                    last--;
+                    n--;
+                    i--;
+                } else if (i != last && output > 0 && P < tokens[i]) {
+                    P = P + tokens[i];
+                    output--;
+                }
+            }
             return output;
         }
-        for (int i = 0; i < tokens.length; i++) {
-            if (P > tokens[i]) {
-                P = P - tokens[i];
-                output++;
-            } else if (i != tokens.length - 1 && output > 0 && P < tokens[i]) {
-                P = P + tokens[i];
-                output--;
-            }
-        }
-        return output;
-    }
 }
