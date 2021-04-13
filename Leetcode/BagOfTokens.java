@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Link - https://leetcode.com/problems/bag-of-tokens/
  *
@@ -45,7 +47,6 @@
  *     0 <= tokens[i], P < 104
  */
 public class BagOfTokens {
-    public int bagOfTokensScore(int[] tokens, int P) {
         public int bagOfTokensScore(int[] tokens, int P) {
             int output = 0;
             int n = tokens.length;
