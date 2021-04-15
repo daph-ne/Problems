@@ -25,7 +25,7 @@
 |948| [Bag of Tokens](./Leetcode/BagOfTokens.java) |Medium| Sort the array <br> If power is less, consider gaining power from the last element and continue the same process |
 |200| [Number of Islands](,/Leetcode/NumberOfIslands.java) |Medium| Run through the aray, if '1', check all 4 sides to find 1 and increase the ount of islands|
 | 5| [Longest Palindromic Substring](./Leetcode/LongestPalindromicSubstring.java) | Medium | Take substring from first to last and check palindrome <br> if not, shrink the substring and keep checking |
-|238| [Product of Array Except Self](./Leetcode/ProductOfArrayExceptSelf.java) | Medium | |
+|238| [Product of Array Except Self](./Leetcode/ProductOfArrayExceptSelf.java) | Medium | Mulifply each from the first element and then from the last element |
 
 ## Others
 | Problem number | Problem | Remarks | 
