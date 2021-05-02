@@ -2,7 +2,7 @@
 
 ## Leetcode
 | Problem number |Language| Problem | Category | Remarks |
-|:-----:|:-----:|:-----:|:----:|
+|:-----:|:-----:|:-----:|:-----:|:----:|
 |1480|Java|[Running Sum of 1d Array](./Leetcode/RunningSumOf1dArray.java)|Easy|Loop through array; add summation of previous|
 |1672|Java|[Richest Customer Wealth](./Leetcode/RichestCustomerWealth.java)|Easy|Find sum of individual wealth; Max of summed array is richest|
 |11|Java|[Container With Most Water](./Leetcode/ContainerWithMostWater.java)|Medium|Measure water between initial to final value; Max value is area of container|
