@@ -27,8 +27,8 @@
  *     It is guaranteed that the list represents a number that does not have leading zeros.
  */
 public class AddTwoNumbers {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-       public class ListNode {
+    public Object addTwoNumbers(ListNode l1, ListNode l2) {
+       class ListNode {
          int val;
          ListNode next;
          ListNode(int val) {
