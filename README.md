@@ -13,6 +13,7 @@
 |74|Java|[Search a 2D Matrix](./Leetcode/SearchA2DMatrix.java )|Medium|Loop nested for loops; Return true if target is found; Otherwise return false|
 |21|Java|[Merge Two Sorted Lists](./Leetcode/ListNode.java)| Easy | Choose smaller value; Append to list; Move pointer forward; Append the remaining when one list is empty.|
 |771|Java|[Jewels and Stones](./Leetcode/JewelsAndStones.java)|Easy| Iterate using inner for loop; add count when same element is found. |
+|771|JavaScript|[Jewels and Stones](./Leetcode/JewelsAndStones.js)|Easy| Iterate using inner for loop; add count when same element is found. |
 |1108|Java|[Defanging an IP Address](./Leetcode/DefangingAnIPAddress.java) | Easy | Method 1 <br> Using replace keyword <br> <br> Method 2 <br> Create new string; replace the required characters|
 |31|Java|[Next Permutation](./Leetcode/NextPermutation.java)| Medium | Solved from the last index <br> 'i' is the first small number after a large number. <br> 'j' is the first number larger than 'i'. <br> Swap i and j. <br> Reverse the remaining indexes after i. |
 |1773|Java| [Count Items Matching a Rule](./Leetcode/CountItemsMatchingARule.java) | Easy | Iterate through the list; <br> Find matching using switch case|
