@@ -28,7 +28,7 @@
 | 5|Java| [Longest Palindromic Substring](./Leetcode/LongestPalindromicSubstring.java) | Medium | Take substring from first to last and check palindrome <br> if not, shrink the substring and keep checking |
 |238|Java| [Product of Array Except Self](./Leetcode/ProductOfArrayExceptSelf.java) | Medium | Mulifply each from the first element and then from the last element |
 |20|Java| [Valid Parentheses](./Leetcode/ValidParentheses.java) | Easy | Push and pop in a stack if perfect pair or else return false. If stack is empty at the end, it is a valid parentheses|
-
+|1603|JavaScript| [Design Parking System](./Leetcode/DesignParkingSystem.js) | Easy | |
 
 
 ## Others
