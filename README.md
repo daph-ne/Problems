@@ -31,6 +31,7 @@
 |1603|JavaScript| [Design Parking System](./Leetcode/DesignParkingSystem.js) | Easy | |
 |1342|JavaScript| [Number of Steps to Reduce a Number to Zero](./Leetcode/ReduceNumToZero.js)|
 Easy|Used recursion |
+|1662|JavaScript| [Check If Two String Arrays are Equivalent] (./Leetcode/CheckIfArraysAreEquivalent.js)|Easy| Join both strings and check if equivalent |
 
 ## Others
 | Problem number | Problem | Remarks | 
