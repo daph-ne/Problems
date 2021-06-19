@@ -34,6 +34,7 @@ Easy|Used recursion |
 |1662|JavaScript| [Check If Two String Arrays are Equivalent](./Leetcode/CheckIfArraysAreEquivalent.js)|Easy| Join both strings and check if equivalent |
 |1450|JavaScript| [Number of Students Doing Homework at a Given Time](./Leetcode/StudentsDoingHomeworkAtGivenTime.js)|Easy||
 |1859|JavaScript| [ Sorting the Sentence](./Leetcode/SortingtheSentence.js)|Easy|Split; <br> Place the word on the last number - 1th index of the new array |
+|33|JavaScript| [Search in Rotated Sorted Array](./Leetcode/SearchinRotatedSortedArray.js) |Medium| Run through the array and return the i-th index if true, else return -1.|
 
 
 ## Others
