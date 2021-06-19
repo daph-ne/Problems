@@ -29,8 +29,7 @@
 |238|Java| [Product of Array Except Self](./Leetcode/ProductOfArrayExceptSelf.java) | Medium | Mulifply each from the first element and then from the last element |
 |20|Java| [Valid Parentheses](./Leetcode/ValidParentheses.java) | Easy | Push and pop in a stack if perfect pair or else return false. If stack is empty at the end, it is a valid parentheses|
 |1603|JavaScript| [Design Parking System](./Leetcode/DesignParkingSystem.js) | Easy | |
-|1342|JavaScript| [Number of Steps to Reduce a Number to Zero](./Leetcode/ReduceNumToZero.js)|
-Easy|Used recursion |
+|1342|JavaScript| [Number of Steps to Reduce a Number to Zero](./Leetcode/ReduceNumToZero.js)|Easy|Used recursion |
 |1662|JavaScript| [Check If Two String Arrays are Equivalent](./Leetcode/CheckIfArraysAreEquivalent.js)|Easy| Join both strings and check if equivalent |
 |1450|JavaScript| [Number of Students Doing Homework at a Given Time](./Leetcode/StudentsDoingHomeworkAtGivenTime.js)|Easy||
 |1859|JavaScript| [ Sorting the Sentence](./Leetcode/SortingtheSentence.js)|Easy|Split; <br> Place the word on the last number - 1th index of the new array |
